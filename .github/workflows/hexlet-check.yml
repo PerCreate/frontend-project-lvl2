@@ -29,6 +29,13 @@ jobs:
       - name: jest-test
         run: NODE_OPTIONS=--experimental-vm-modules npx jest
 
-      - name: linter-test
-        uses: eslint/github-action@v0
+        - uses: actions/checkout@v1
+ 
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+ 
+      - run: npm ci
+ 
+      - uses: eslint/github-action@v0
 
