@@ -28,8 +28,6 @@ jobs:
 
       - name: jest-test
         run: NODE_OPTIONS=--experimental-vm-modules npx jest
-        with:
-          jestArgs: ../__tests__/gediff.test.js
 
       - name: linter-test
         run: make lint
