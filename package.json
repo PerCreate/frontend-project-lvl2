@@ -5,8 +5,7 @@
   "description": "[![Actions Status](https://github.com/PerCreate/frontend-project-lvl2/workflows/hexlet-check/badge.svg)](https://github.com/PerCreate/frontend-project-lvl2/actions)",
   "main": "gendiff.mjs",
   "scripts": {
-    "lint": "eslint .",
-    "eslint:github-action": "eslint src/",
+    "lint": "eslint . --ext .mjs,.js",
     "test": "cross-env NODE_OPTIONS=--experimental-vm-modules npx jest"
   },
   "repository": {
